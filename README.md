@@ -40,31 +40,7 @@ Simply create your branch in github and create a codespace for it using the gith
 
 Load up that codespace you will have all the tools you need to start develop,
 
-### Development steps:
-
-Development steps are the same once you are inside the container (regardless if spun from Codespaces or locally from Dev Containers extension):
-
-`Ctrl + Shift + ~` to open 2 new terminals and simply start the services: 
-
-> NOTE: It is important that you firsts login via `az login  --use-device-code`
-
-API: 
-
-`cd app/api && flask run --debug --port=5001`
-
-Frontend: 
-
-`cd app/frontend && npm run dev`
-
-All the necessary `npm install` and `pip install` commands have already been run and you can simply reach the codespace url that points to the `8080` port.
-
-**NOTE**: You will need to have a `163dev` account in order to develop and test on DEV/locally ([request an account](https://forms.office.com/pages/responsepage.aspx?id=lMFb0L-U1kquLh2w8uOPXgYMhvp43QhHmpexXCVOi0NUNzZSUjJZSjRDNldYWUpPWDVIWkdZMzZJMi4u)).
-
-### Issues with Dev Container Workspace Cache
-
-If you encounter an issue starting `npm` in dev containers you can refer to this [workaround/bug](https://stackoverflow.com/questions/75708866/vscode-dev-container-fails-to-load-ms-vscode-js-debug-extension-correctly).
-
-### Manual setup (deprecated)
+#### Manual environment setup (option 3) (deprecated)
 
 We are developing on python 3.11+.
 
@@ -102,6 +78,32 @@ pip install -r az-functions/create-index/requirements.txt --upgrade
 npm install
 npm run dev
 ```
+
+
+
+### Development steps:
+
+Development steps are the same once you are inside the container (regardless if spun from Codespaces or locally from Dev Containers extension):
+
+`Ctrl + Shift + ~` to open 2 new terminals and simply start the services: 
+
+> NOTE: It is important that you firsts login via `az login  --use-device-code`
+
+API: 
+
+`cd app/api && flask run --debug --port=5001`
+
+Frontend: 
+
+`cd app/frontend && npm run dev`
+
+All the necessary `npm install` and `pip install` commands have already been run and you can simply reach the codespace url that points to the `8080` port.
+
+**NOTE**: You will need to have a `163dev` account in order to develop and test on DEV/locally ([request an account](https://forms.office.com/pages/responsepage.aspx?id=lMFb0L-U1kquLh2w8uOPXgYMhvp43QhHmpexXCVOi0NUNzZSUjJZSjRDNldYWUpPWDVIWkdZMzZJMi4u)).
+
+### Issues with Dev Container Workspace Cache
+
+If you encounter an issue starting `npm` in dev containers you can refer to this [workaround/bug](https://stackoverflow.com/questions/75708866/vscode-dev-container-fails-to-load-ms-vscode-js-debug-extension-correctly).
 
 ### Infrastructure
 
