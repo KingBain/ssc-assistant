@@ -15,26 +15,30 @@ When the Assistant uses a tool in its API call, it indicates which tools were us
 
 This section will help developer understand this project and how to set it up from the ground up and how to run it on their machine.
 
-### Codespaces
+### Development Environments
 
-Simply create your branch and create a codespace for it from github. Load up that codespace you will have everything that you need to start working,
-
-### or LOCAL Dev Containers (recommended)
+#### LOCAL Dev Containers (Option 1) (recommended)
 
 Here is how you can develop locally with Dev Containers.
 
-#### Pre-requisites
+##### Pre-requisites
 
 * VSCode with Dev Container extension
 * Docker engine installed on Linux (Can be via WSL 2.0 on Windows)
 > **NOTE:** If you are using Docker Desktop you are **required** to have an Enterprise lisence.
 
-#### Steps
+##### Steps
 
-In VScode, lauch the Command Palette `f1` or `Ctrl + Shift + P` hotkeys.
-Select  `Dev Containers: Reopen in Container` (or alternatively if you never did open it `Dev Containers: Open Folder in Container...` and select the repo with `ssc-assistant`).
+In VScode, lauch the Command Palette using `f1` or `Ctrl + Shift + P` hotkeys. Select  `Dev Containers: Reopen in Container` (or alternatively if you never did open it `Dev Containers: Open Folder in Container...` and select the repo with `ssc-assistant`).
 
 > **NOTE:** [Sharing SSH Key with the container via `ssh-agent`](https://code.visualstudio.com/remote/advancedcontainers/sharing-git-credentials)
+
+#### Github Codespaces (Option 2)
+
+Simply create your branch in github and create a codespace for it using the github web interface.
+![image](https://github.com/user-attachments/assets/17e0ce48-023f-41b1-8d3c-3fd72ba993e9)
+
+Load up that codespace you will have all the tools you need to start develop,
 
 ### Development steps:
 
