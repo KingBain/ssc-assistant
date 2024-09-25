@@ -1,7 +1,15 @@
-# SSC Assistant
+Select Language / Sélectionner la langue 
+
+[![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/jonatasemidio/multilanguage-readme-pattern/blob/master/README.en.md)
+[![fr](https://img.shields.io/badge/lang-fr-blue.svg)](https://github.com/jonatasemidio/multilanguage-readme-pattern/blob/master/README.fr.md)
+
+
+# SSC Assistant / Assistant SSC
 Second iteration of the SSC chatbot/assistant.
 
-<img alt="Main screen of the SSC Assistant"  src="img/mainscreen.png" />
+Deuxième itération du chatbot/assistant SSC.
+
+<img alt="Main screen of the SSC Assistant"  src="img/mainscreen.png" width="800px" />
 
 The SSC Assistant leverages the **Azure OpenAI** API to utilize advanced language models such as **GPT-4o**. It employs the Retrieval Augmented Generation (RAG) method, integrating external APIs and tools to offer a wide array of options for users.
 
@@ -10,6 +18,27 @@ The SSC Assistant leverages the **Azure OpenAI** API to utilize advanced languag
 When the Assistant uses a tool in its API call, it indicates which tools were used in the response and displays the relevant metadata. For example, here is how it presents information retrieved using the GEDS tool:
 
 <img alt="Answer with options" src="img/tools.png">
+
+
+# Assistant SSC
+Deuxième itération du chatbot/assistant SSC.
+
+<img alt="Écran principal de l'Assistant SSC" src="img/mainscreen.png" />
+
+L'Assistant SSC utilise l'API **Azure OpenAI** pour exploiter des modèles de langage avancés tels que **GPT-4o**. Il emploie la méthode de Génération Augmentée par Récupération (RAG), intégrant des API externes et des outils pour offrir une large gamme d'options aux utilisateurs.
+
+<img alt="Affichage du menu d'options de l'Assistant" width="300px" src="img/optionsmenu.png">
+
+Lorsque l'Assistant utilise un outil dans son appel API, il indique quels outils ont été utilisés dans la réponse et affiche les métadonnées pertinentes. Par exemple, voici comment il présente les informations récupérées à l'aide de l'outil GEDS :
+
+<img alt="Réponse avec options" src="img/tools.png">
+
+
+
+
+
+
+
 
 ## Developer(s)
 
