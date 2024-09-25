@@ -91,11 +91,15 @@ Development steps are the same once you are inside the container (regardless if 
 
 API: 
 
-`cd app/api && flask run --debug --port=5001`
+`cd app/api `
+`cp ./.env.example .env`
+`flask run --debug --port=5001`
 
 Frontend: 
 
-`cd app/frontend && npm run dev`
+`cd app/frontend` 
+`cp ./.env.example .env`
+`npm run dev`
 
 All the necessary `npm install` and `pip install` commands have already been run and you can simply reach the codespace url that points to the `8080` port.
 
