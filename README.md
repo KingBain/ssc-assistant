@@ -19,7 +19,7 @@ This section will help developer understand this project and how to set it up fr
 
 Simply create your branch and create a codespace for it from github. Load up that codespace you will have everything that you need to start working,
 
-### or Dev Containers (recommended)
+### or LOCAL Dev Containers (recommended)
 
 Here is how you can develop locally with Dev Containers.
 
@@ -31,7 +31,8 @@ Here is how you can develop locally with Dev Containers.
 
 #### Steps
 
-`Ctrl + Shift + P` in VSCode and then `Dev Containers: Reopen in Container` (or alternatively if you never did open it `Dev Containers: Open Folder in Container...` and select the repo with `ssc-assistant`).
+In VScode, lauch the Command Palette `f1` or `Ctrl + Shift + P` hotkeys.
+Select  `Dev Containers: Reopen in Container` (or alternatively if you never did open it `Dev Containers: Open Folder in Container...` and select the repo with `ssc-assistant`).
 
 > **NOTE:** [Sharing SSH Key with the container via `ssh-agent`](https://code.visualstudio.com/remote/advancedcontainers/sharing-git-credentials)
 
