@@ -9,8 +9,8 @@ data "azuread_user" "po-af" {
   user_principal_name = "alain.forcier@ssc-spc.gc.ca"
 }
 
-data "azuread_user" "dev-harsha" {
-  user_principal_name = "harsha.kakumanu@ssc-spc.gc.ca"
+data "azuread_user" "codyrobillard" {
+  user_principal_name = "cody.robillard@ssc-spc.gc.ca"
 }
 
 data "azuread_service_principal" "terraform" {
@@ -18,10 +18,31 @@ data "azuread_service_principal" "terraform" {
 }
 
 #######################################################
-#                   Sub Contributors                  #
+#             Sub Contributors/Reader                 #
 #######################################################
-resource "azurerm_role_assignment" "sub-contri-1" {
+# resource "azurerm_role_assignment" "sub-contri-1" {
+#   scope                = azurerm_resource_group.dev.id
+#   role_definition_name = "Contributor"
+#   principal_id         = ###
+# }
+
+#Read Sub and Use OpenAI services
+resource "azurerm_role_assignment" "sub-read-cody" {
   scope                = azurerm_resource_group.dev.id
-  role_definition_name = "Contributor"
-  principal_id         = data.azuread_user.dev-harsha.object_id
+  role_definition_name = "Reader"
+  principal_id         = data.azuread_user.codyrobillard.id
+}
+resource "azurerm_role_assignment" "openai_user_cody" {
+  role_definition_name = "Cognitive Services User"
+  scope = data.azurerm_resource_group.ai.id
+  principal_id = data.azuread_user.codyrobillard.id
+}
+
+#######################################################
+#                      APPS                           #
+#######################################################
+resource "azurerm_role_assignment" "api_read_openai" {
+  role_definition_name = "Cognitive Services User"
+  scope = data.azurerm_resource_group.ai.id
+  principal_id = azurerm_linux_web_app.api.identity[0].principal_id
 }
